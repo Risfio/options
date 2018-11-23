@@ -46,7 +46,7 @@ class Option:
         return result
 
     def _sell_put_balance(self, ba):
-        return self._premium - self._sell_put_revenue(ba)
+        return self._premium + self._sell_put_revenue(ba)
 
     def get_revenue(self, ba):
         result = None
