@@ -20,7 +20,7 @@ class Option:
         if self._strike <= ba:
             result = 0
         elif self._strike > ba:
-            result = ba - self._strike
+            result = self._strike - ba
         return result
 
     def _buy_put_balance(self, ba):
